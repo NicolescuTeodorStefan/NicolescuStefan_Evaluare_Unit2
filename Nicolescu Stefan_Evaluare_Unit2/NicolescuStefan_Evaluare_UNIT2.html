@@ -1,0 +1,118 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="NicolescuStefan-Style.css">
+
+
+</head>
+<body>
+
+<h1 id="nume"> Nicolescu Teodor-Stefan </h1>
+<h2 id="email"> Nicolescu.Do.Teodor@utcluj.didatec.ro </h2>
+<div class="structura">
+<h3 id="titlu"> Structura retelei personale si accesul la internet </h3>
+<img id="schema" src="Schema_Internet.png">
+<h3> Caracteristicile conexiunii la retea</h3>
+<ul>
+<li> Adresa MAC:4C-CC-6A-45-E2-6B</li>
+<li>Adresa IP:192.168.0.107</li>
+<li>Debit la download:84.0 Mbps</li>
+<li>Debit la upload:91.4 Mbps</li>
+</ul>
+</div>
+<h3> Specificatii tehnice ale statiei principale de lucru</h3>
+<table id="componente">
+  <tr>
+    <th>Denumire componenta</th>
+    <th>Producator</th>
+    <th>Parametri</th>
+  </tr>
+  <tr>
+    <td>Procesor</td>
+    <td>Intel</td>
+    <td>
+	<ul>
+	<li>Tip: Intel Core i5-6600</li>
+	<li>Frecventa: 3.3GHz</li>
+	<li>Memorie Cache: 6MB</li>
+	</ul>
+	</td>
+  </tr>
+  <tr>
+    <td>Memorie RAM</td>
+    <td>Corsair</td>
+    <td>
+	<ul>
+	<li>Tip: Corsair Vengeance 2x8 GB</li>
+	<li>Memorie: DDR 4</li>
+	<li>Frecventa: 2400MHz</li>
+	</ul>
+	</td>
+  </tr>
+  <tr>
+    <td>Placa video</td>
+    <td>nVidia</td>
+    <td>
+	<ul>
+	<li>Tip: nVidia GeForce GTX 1050ti</li>
+	<li>Memorie: 4GB GDDR5</li>
+	<li>BUS Memorie: 128bit</li>
+	</ul>
+	</td>
+  </tr>
+</table>
+<h3> Utilizarea resurselor(Slideshow)</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="ss1.png" style="width:600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="ss2.png" style="width:600px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="ss3.png" style="width:600px">
+  
+</div>
+
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</head>
+
+</html>

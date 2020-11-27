@@ -1,0 +1,12 @@
+h1{
+text-allign:right;
+border:15px black;
+background-color:lightgreen;
+color:blue;
+}
+div {
+  width: 300px;
+  border: 15px red;
+  padding: 50px;
+  margin: 20px;
+}
